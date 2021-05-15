@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,13 +23,13 @@
         </div>
 
         <div class="content">
-            <a href="adminindex.html">admin</a>
-            <a href="index.html">student</a>
+            <a href="adminindex.php">admin</a>
+            <a href="index.php">student</a>
            
             <div class="forms">
-                <h2>Hello admin,</h2>
+                <h2>Hello student,</h2>
                 <form action="" method="post">
-                    <label for="mail">Username</label>
+                    <label for="mail">Email</label>
                         <input type="email">
                     
                     <label for="mail"> Password</label>
