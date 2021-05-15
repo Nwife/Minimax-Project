@@ -60,9 +60,16 @@ img{
     padding: 10px 10px;
     background-color: #E5F1FF;
     margin-right: 30px;
-
 }
 
+.content h4{
+    margin-bottom: 13px;
+    color: #2385f5;
+}
+
+.content .forms h2{
+    margin-top: 45px;
+}
 
 .forms{
     margin-top: 20px;

@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav>
-           <h2>Miniso</h2>
+           <h2>Minimax</h2>
            <h3>Amaeze</h3> 
         </nav>
     </header>
@@ -23,6 +23,7 @@
         </div>
 
         <div class="content">
+        <h4 class="signin">Sign In As</h4>
             <a href="adminindex.php">admin</a>
             <a href="index.php">student</a>
            

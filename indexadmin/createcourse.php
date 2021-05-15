@@ -20,18 +20,18 @@
     <div class="main">
         <?php require('adminhead.php'); ?>
         <div class="hold">
-            <h2> Create a course </h2>
+            <h2> Create a course +</h2>
 
             <div class="forms">
                  
-                <form action="" method="post">
+                <form action="../includes/addcourse.inc.php" method="POST">
                     <label for="text">Course Code</label>
-                        <input type="email">
+                        <input type="text" name="code">
                     
-                    <label for="mail">Course Title</label>
-                    <input type="password">
+                    <label for="text">Course Title</label>
+                    <input type="text" name="title">
                     
-                    <input type="submit" value="Add Course">
+                    <input type="submit" name="addcourse-submit" value="Add Course">
                 </form>
             </div>
         </div>
