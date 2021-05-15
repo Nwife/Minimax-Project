@@ -11,8 +11,13 @@ body{
 
 header{
    padding: 20px 20px;
-   background-color: rgb(204, 213, 221);
+   background-color: rgb(238, 245, 251);
    height: 8vh;
+}
+
+header nav h3{
+    font-weight: 600;
+    font-size: 20px;
 }
 
 nav{
@@ -22,7 +27,7 @@ nav{
 
 main{
     display: flex;
-    padding-right: 20px;
+    /* padding-right: 20px; */
     padding-left: 20px;
     height: 92vh;
 }
@@ -43,9 +48,9 @@ img{
 .content{
     width: 50vw;
     height: 92vh;
-    background-color: rgb(255, 255, 255);
+    background-color: #fbfcff;;
     padding-left: 120px;
-    padding-top: 120px;
+    padding-top: 180px;
 }
 
 .content a {
@@ -56,4 +61,35 @@ img{
     background-color: #E5F1FF;
     margin-right: 30px;
 
+}
+
+
+.forms{
+    margin-top: 20px;
+}
+
+form{
+    margin-top: 20px;
+}
+
+label{
+    font-size: 15px;
+    color: #858A8F;
+}
+
+input{
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 7px 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+    width: 250px;
+    background-color: #F5F6FA;
+}
+
+input[type="submit"]{
+    background-color: #2385f5;
+    color: black;
+    margin-top: 35px;
 }
