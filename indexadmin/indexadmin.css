@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+.sidenav h3 a{
+    display: flex;
+}
+
+.sidenav h3 a svg{
+    margin-right: 18px;
+}
+
+.miniso{
+  margin-bottom: 30px;
+}
+
+.miniso a{
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  font-weight: 700; 
+}
+
+.sidenav {
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(#479dff, black);
+    overflow-x: hidden;
+    padding: 25px 20px;
+  }
+
+  .sidenav_item {
+    padding: 18px 0;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+    transition: all .8s;
+    cursor: pointer;
+  }
+  
+  .sidenav_item:hover {
+    color: #0099ff;
+  }
+
+  .sidenav_item span{
+    margin-left: 10px;
+  }
+
+  .main{
+    margin-left: 300px;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    background-color: white;
+  }
+
+  header h3{
+    color: black;
+    float: left;
+    margin-bottom: 5px;
+  }
+
+  header h4 {
+    display: flex;
+    align-items: center;
+}
+
+header a{
+  margin-left: 15px;
+  background-color: #479dff;
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+  .main h4 svg{
+    margin-right: 10px;
+}
+
+.cards{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: cornflowerblue; */
+}
+  
+.firsthold{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardbody{
+  background-image: linear-gradient(#479dff, black);
+  /* margin: 15px 80px 15px 15px; */
+  /* padding: 60 140px; */
+  width: 300px;
+  height: 155px;
+  font-size: 30px;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all .8s;
+  cursor: pointer;
+}
+
+.innertext p{
+  font-size: 16px;
+}
+
+/*add student*/
+.hold{
+  padding-left: 60px;
+  padding-top: 40px;
+}
