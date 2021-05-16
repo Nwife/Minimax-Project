@@ -29,12 +29,34 @@
            
             <div class="forms">
                 <h2>Hello student,</h2>
+
+                <?php
+                if(isset($_GET['error'])){
+                    if($_GET['error'] == "emptyfields"){
+                        echo '<p class ="signinerror"> fill in all fields.</p>';
+                    }
+                    elseif($_GET['error'] == "incorrectPassword"){
+                        echo '<p class ="signinerror"> incorrect password. </p>';
+                    }
+                    elseif($_GET['error'] == "nostudentfound"){
+                        echo '<p class ="signinerror"> student not found.</p>';
+                    }
+                }
+                elseif(isset($_GET['signup'])){
+                    if($_GET['signup'] == "success"){
+                        echo '<p class ="signupsuccess">Signup Successful!</p>';
+                    }
+                }
+                
+            ?>
+
                 <form action="includes/studentlogin.inc.php" method="POST">
                     <label for="">Email</label>
                         <input type="email" name="studentemail">
                     
                     <label for=""> Password</label>
                         <input type="password" name="studentpwd">
+                        <h5>* your default password is the first 3 letters of your name in lower case</h5>
                     
                     <input type="submit" name="studentlogin-submit" value="Log in">
                 </form>

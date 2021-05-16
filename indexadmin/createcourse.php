@@ -22,6 +22,23 @@
         <div class="hold">
             <h2> Create a course +</h2>
 
+            <?php
+                if(isset($_GET['error'])){
+                    if($_GET['error'] == "emptyfields"){
+                        echo '<p class ="signinerror"> fill in all fields.</p>';
+                    }
+                    elseif($_GET['error'] == "queryerror"){
+                        echo '<p class ="signinerror"> query error, try again.</p>';
+                    }
+                }
+                elseif(isset($_GET['course'])){
+                    if($_GET['course'] == "success"){
+                        echo '<p class ="signupsuccess"> course added.</p>';
+                    }
+                }
+                
+            ?>
+
             <div class="forms">
                  
                 <form action="../includes/addcourse.inc.php" method="POST">

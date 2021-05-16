@@ -22,6 +22,33 @@
         <div class="hold">
             <h2> Add a student + </h2>
 
+            
+            <?php
+                if(isset($_GET['error'])){
+                    if($_GET['error'] == "emptyfields"){
+                        echo '<p class ="signinerror"> fill in all fields.</p>';
+                    }
+                    elseif($_GET['error'] == "namelessthan"){
+                        echo '<p class ="signinerror"> student name should be 3 or more characters. </p>';
+                    }
+                    elseif($_GET['error'] == "invalidmail"){
+                        echo '<p class ="signinerror"> invalid email address.</p>';
+                    }
+                    elseif($_GET['error'] == "mailtaken"){
+                        echo '<p class ="signinerror"> email address already registered.</p>';
+                    }
+                    elseif($_GET['error'] == "queryerror"){
+                        echo '<p class ="signinerror"> query error, try again.</p>';
+                    }
+                }
+                elseif(isset($_GET['signup'])){
+                    if($_GET['signup'] == "success"){
+                        echo '<p class ="signupsuccess"> student added.</p>';
+                    }
+                }
+                
+            ?>
+
             <div class="forms">
                  
                 <form action="../includes/addstudent.inc.php" method="post">

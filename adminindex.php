@@ -27,6 +27,19 @@
            
             <div class="forms">
                 <h2>Hello admin,</h2>
+
+                   
+                <?php
+                if(isset($_GET['error'])){
+                    if($_GET['error'] == "emptyfields"){
+                        echo '<p class ="signinerror"> fill in all fields.</p>';
+                    }
+                    elseif($_GET['error'] == "wrongnamepwd"){
+                        echo '<p class ="signinerror"> incorrect username/password. </p>';
+                    }
+                }
+                ?> 
+
                 <form action="includes/adminlogin.inc.php" method="POST">
                     <label for="name">Username</label>
                         <input type="text" name="adminname">

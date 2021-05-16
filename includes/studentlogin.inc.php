@@ -29,13 +29,8 @@ if(isset($_POST["studentlogin-submit"])){
                     $_SESSION['id'] = $row["idStudent"];
                     $_SESSION['name'] = $row["nameStudent"];
                     $_SESSION['email'] = $row["emailStudent"];
-
                     
                     header("Location: ../studentindex.php?login=success");
-                    exit();
-                }
-                else {
-                    header("Location: ../index.php?error=incorrectPassword");
                     exit();
                 }
             }else{

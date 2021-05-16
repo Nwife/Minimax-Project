@@ -1,5 +1,28 @@
 <?php session_start(); ?>
 
+<?php
+
+require('includes/dbh.inc.php');
+$id = $_SESSION['id'];
+//write sql to fetch student
+$sql = "SELECT * FROM registration WHERE studentID = $id";
+
+//query the sql
+$resultReg = mysqli_query($conn, $sql);
+
+//return as associative array
+$rowReg = mysqli_fetch_all($resultReg, MYSQLI_ASSOC);
+
+//free result
+mysqli_free_result($resultReg);
+
+//close conection
+mysqli_close($conn);
+
+// print_r($rowReg);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,32 +56,20 @@
             <tbody>
                 <tr>
                     <th>S/N</th>
-                    <th>Course Title</th>
+                    <th>Course Code</th>
                     <th>Course Name</th>
                 </tr>
-
-                <tr>
+                <?php foreach($rowReg as $reg): ?>
+                    <tr>
+                        <td>#</td>
+                        <td><?= $reg["courseCode"]; ?></td>
+                        <td><?= $reg["courseTitle"]; ?></td>     
+                    </tr>
+                <?php endforeach; ?>
+                <!-- <tr>
                     <td>1</td>
                     <td>CSC 422</td>
                     <td>Digital circuits & signals</td>
-                </tr>
-
-                <tr>
-                    <td>2</td>
-                    <td>CSC 419</td>
-                    <td>Software Architecture</td>
-                </tr>
-
-                <tr>
-                    <td>2</td>
-                    <td>CSC 419</td>
-                    <td>Software Architecture</td>
-                </tr>
-
-                <tr>
-                    <td>2</td>
-                    <td>CSC 419</td>
-                    <td>Software Architecture</td>
                 </tr>
             </tbody>
         </table>

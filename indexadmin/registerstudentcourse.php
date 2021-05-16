@@ -42,8 +42,6 @@
 ?>
 
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,6 +60,20 @@
 
         <div class="hold">
             <h2>Register a student for a course.</h2>
+
+            <?php
+                if(isset($_GET['error'])){
+                  if($_GET['error'] == "queryerror"){
+                        echo '<p class ="signinerror"> query error, try again.</p>';
+                    }
+                }
+                elseif(isset($_GET['signup'])){
+                    if($_GET['signup'] == "success"){
+                        echo '<p class ="signupsuccessx"> student|course registered.</p>';
+                    }
+                }
+                
+            ?>
 
             <form class="stucour" action="../includes/registration.inc.php" method="post">
                 <div class="students">

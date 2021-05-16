@@ -69,6 +69,7 @@ img{
 
 .content .forms h2{
     margin-top: 45px;
+    margin-bottom: 25px;
 }
 
 .forms{
@@ -101,7 +102,11 @@ input[type="submit"]{
     margin-top: 35px;
 }
 
-/* Register student
-.stucour label{
-    color: black;
-  } */
+.forms h5{
+    color: #2385f5; 
+}
+
+.signinerror{
+    color: rgb(245, 73, 73);
+    font-weight: 700;
+}

@@ -20,13 +20,13 @@ if(isset($_POST["addst-submit"])){
         exit();
     }
     else{
-        $sql = "SELECT emailStudent FROM students WHERE emailStudent = $email";
+        $sql2 = "SELECT emailStudent FROM students WHERE emailStudent = $email";
 
-        $result = mysqli_query($conn, $sql);
+        $result = mysqli_query($conn, $sql2);
 
-        $row = mysqli_num_rows($result);
+        $row = mysqli_fetch_array($result);
 
-        if($row > 0){
+        if($row){
             header("Location: ../indexadmin/addstudent.php?error=mailtaken");
             exit(); 
         }
@@ -40,7 +40,6 @@ if(isset($_POST["addst-submit"])){
                 exit(); 
             }
             else{
-            
                 header("Location: ../indexadmin/addstudent.php?signup=success");
                 exit();
             }

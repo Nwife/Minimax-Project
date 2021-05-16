@@ -133,6 +133,7 @@ header a{
 /* Register student */
 .hold h2{
   color:#479dff;
+  margin-bottom: 25px;
 }
 
 .stucour label{
@@ -160,4 +161,14 @@ select{
 .submitcour{
   width: 200px;
   margin-left: 2px;
+}
+
+.signupsuccess{
+  color: black;
+  font-weight: 700;
+}
+
+.signupsuccessx{
+  color: #519cf3;
+  font-weight: 700;
 }
