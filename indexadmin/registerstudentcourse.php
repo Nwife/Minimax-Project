@@ -65,26 +65,28 @@
 
             <form class="stucour" action="../includes/registration.inc.php" method="post">
                 <div class="students">
-                <label for="stud">Student</label>
-                <select name="students" id="stud">
-                    <?php foreach($rowStudent as $student): ?>
-                        <option value="<?= $student['nameStudent']; ?>"><?= $student["nameStudent"]; ?></option>
-                        <!-- <option value="">Bjorn</option>  -->
-                    <?php endforeach; ?>
-                </select>
+                    <label for="stud">Student</label>
+                    <select name="students" id="stud">
+                        <?php foreach($rowStudent as $student): ?>
+                            
+                            <option value="<?= $student["nameStudent"] . "+". $student['idStudent']; ?>"><?= $student["nameStudent"];?></option>
+                            <!-- <option value="">Bjorn</option>  -->
+                            <?php echo $student["idStudent"]; ?>
+                        <?php endforeach; ?>
+                    </select>
                 </div>
                 
                 <div class="courses">
                 <label for="cour">Course</label>
                 <select name="course" id="cour">
                     <?php foreach($rowCourse as $course): ?>
-                    <option value="<?= $course["courseCode"]; ?>"><?= $course["courseCode"]; ?></option>
+                    <option value="<?= $course["courseCode"]. "+" . $course["courseTitle"]; ?>"><?= $course["courseCode"]; ?></option>
                     <!-- <option value="">MAT 422</option>
                     <option value="">PHY 311</option> -->
                     <?php endforeach; ?>
                 </select>
                 </div>
-                <input type="hidden" name="idStudent" value="<?= $course["courseCode"]; ?>">
+                
                 <input class="submitcour" type="submit" name="registration-submit">
             </form>
         </div>

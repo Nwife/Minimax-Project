@@ -11,7 +11,7 @@
     <header>
         <nav>
            <h2>Miniso</h2>
-           <h3>Amaeze</h3> 
+           <h3>@Amaeze</h3> 
         </nav>
     </header>
 

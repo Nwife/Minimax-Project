@@ -13,7 +13,7 @@
     <header>
         <nav>
            <h2>Minimax</h2>
-           <h3>Amaeze</h3> 
+           <h3>@Amaeze</h3> 
         </nav>
     </header>
 
@@ -29,14 +29,14 @@
            
             <div class="forms">
                 <h2>Hello student,</h2>
-                <form action="" method="post">
-                    <label for="mail">Email</label>
-                        <input type="email">
+                <form action="includes/studentlogin.inc.php" method="POST">
+                    <label for="">Email</label>
+                        <input type="email" name="studentemail">
                     
-                    <label for="mail"> Password</label>
-                    <input type="password">
+                    <label for=""> Password</label>
+                        <input type="password" name="studentpwd">
                     
-                    <input type="submit" value="Log in">
+                    <input type="submit" name="studentlogin-submit" value="Log in">
                 </form>
             </div>
         </div>

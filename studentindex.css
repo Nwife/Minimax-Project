@@ -12,7 +12,7 @@ body{
 header{
    padding: 20px 20px;
    background-color: rgb(238, 245, 251);
-   height: 8vh;
+   height: 9vh;
 }
 
 header nav h3{
@@ -24,9 +24,13 @@ nav h2{
   float: left;
 }
 
-nav h3{
+/* nav h3{
     float: right;
     margin-left: 25px;
+} */
+
+.formbox{
+  float: right;
 }
 
 body{
@@ -44,6 +48,7 @@ table td, th{
     border-left: 1px solid black;
     margin: 0;
     text-align: center;
+    font-weight: 700;
   }
   
   table tr:first-child, table tr:last-child{
@@ -51,7 +56,7 @@ table td, th{
   }
   
   table{
-    border: 1px solid black;
+    border: 2px solid black;
       border-collapse: collapse;
       width: 1000px;
   }
@@ -60,3 +65,22 @@ table td, th{
     background-color: #f5f9fd;
   }
 
+  .formflex{
+    display: flex;
+    align-items: center;
+  }
+
+  input{
+    margin-left: 30px;
+    padding: 10px 12px;
+    background-color: white;
+    color: #2385f5;
+    border-radius: 3px;
+    font-size: 19px;
+    font-weight: 700;
+    border: 1px solid #2385f5;
+  }
+
+  .write{
+    margin-bottom: 50px;
+  }

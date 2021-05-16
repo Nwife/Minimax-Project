@@ -1,4 +1,4 @@
-
+<?php session_start(); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,13 +13,22 @@
     <header>
         <nav>
            <h2>Miniso</h2>
-           <h3>Log out</h3>
-           <h3>Howdie, Nwife</h3> 
            
+           <div class="formbox">
+               <div class="formflex">
+               <h3>Hello, <?= $_SESSION["name"]; ?></h3> 
+                <form method="POST" action="includes/logout.inc.php" class="logoutform">
+                        <input name="logout" type="submit" value="Logout">
+                </form>
+                </div>
+           </div>
         </nav>
     </header>
 
     <main>
+        <div class="write">
+            <h2>Your Registered Courses:</h2>
+        </div>
         <table>
             <tbody>
                 <tr>
