@@ -4,5 +4,5 @@ if(isset($_POST["logout"])){
     session_start();
     session_unset();
     session_destroy();
-    header("Location: ../adminindex.php");
+    header("Location: ../index.php");
 }

@@ -10,7 +10,7 @@
 <body>
     <header>
         <nav>
-           <h2>Miniso</h2>
+           <h2>Minimax</h2>
            <h3>@Amaeze</h3> 
         </nav>
     </header>
