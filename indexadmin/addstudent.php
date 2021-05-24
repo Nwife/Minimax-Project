@@ -51,7 +51,7 @@
 
             <div class="forms">
                  
-                <form action="../includes/addstudent.inc.php" method="post">
+                <form action="../includes/addnewstudent.inc.php" method="post">
                     <label for="text">Name</label>
                         <input type="text" name="stname">
                     
